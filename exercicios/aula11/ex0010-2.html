@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    Você é: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verficar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var txtn = document.querySelector(`input#txtnac`)
+            var res = document.querySelector(`div#res`)
+            res.innerHTML = `Voce é ${txtn}!`
+            if (txtn == Brasileiro){
+                res.innerHTML = 'Você é dos nossos!'
+            }
+        }
+    </script>
+</body>
+</html>
